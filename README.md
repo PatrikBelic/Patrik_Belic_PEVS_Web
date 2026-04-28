@@ -17,5 +17,4 @@ Open any HTML file using a local web server (e.g. WebStorm browser icon).
 ## Technologies
 HTML5 · CSS3 · JavaScript · AJAX (fetch API) · GLightbox (CDN)
 
----
 > This README was updated to fix incorrect commit history from the first attempt visible on GitHub.
