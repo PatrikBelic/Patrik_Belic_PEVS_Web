@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Portfolio</title>
+    <!-- pripojenie stylov -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navigacna lista -->
+<nav>
+    <div class="nav-logo">moje<span>.</span>portfolio</div>
+    <div class="nav-links">
+        <a href="main.html" class="active">Domov</a>
+        <a href="about.html">O mne</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="data.html">Projekty</a>
+    </div>
+</nav>
+
+<!-- hlavny obsah -->
+<div class="page">
+
+    <!-- uvitacia cast s avatarom -->
+    <div class="home-header">
+        <div class="avatar">JA</div>
+        <div class="home-intro">
+            <h1>Vitajte na mojej stranke</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+
+            <!-- tagy s technologiami -->
+            <div class="badge-row">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">Git</span>
+            </div>
+
+            <!-- tlacidla -->
+            <div class="btn-group">
+                <a href="contact.html" class="btn btn-primary">Kontakt</a>
+                <a href="blog.html" class="btn btn-outline">Blog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- oddelovaca ciara -->
+    <div class="divider"></div>
+
+    <!-- posledne prispevky z blogu -->
+    <p class="section-label">Posledne prispevky</p>
+    <div class="post-grid">
+        <a href="blog.html" class="post-card">
+            <div class="meta">
+                <span class="tag">Web dev</span>
+                <span class="date">15. marca 2026</span>
+            </div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </a>
+        <a href="blog.html" class="post-card">
+            <div class="meta">
+                <span class="tag">Git</span>
+                <span class="date">10. januara 2026</span>
+            </div>
+            <h3>Consectetur adipiscing elit</h3>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </a>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

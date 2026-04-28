@@ -1,0 +1,714 @@
+/* odstranenie defaultnych stylov prehliadaca */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* zakladne nastavenie stranky */
+body {
+    background-color: #0f0f0f;
+    color: #e5e5e5;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* navigacna lista hore */
+nav {
+    background-color: #111111;
+    border-bottom: 1px solid #2a2a2a;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 58px;
+}
+
+/* logo vlavo */
+.nav-logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+/* fialova bodka v logu */
+.nav-logo span {
+    color: #6366f1;
+}
+
+/* linky v navigacii */
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 12px;
+    margin-left: 4px;
+    border-radius: 5px;
+}
+
+/* hover efekt */
+.nav-links a:hover {
+    color: white;
+    background-color: #222222;
+}
+
+/* aktivny link - aktualna stranka */
+.nav-links a.active {
+    color: white;
+    background-color: #222222;
+}
+
+/* obal obsahu - centruje a pridava okraje */
+.page {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* maly nadpis sekcie */
+.section-label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #888888;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+/* hlavny nadpis stranky */
+.page-h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+/* podnadpis stranky */
+.page-sub {
+    color: #888888;
+    margin-bottom: 28px;
+}
+
+/* oddelovacia ciara */
+.divider {
+    height: 1px;
+    background-color: #2a2a2a;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* --- DOMOVSKA STRANKA --- */
+
+/* avatar a text su vedla seba */
+.home-header {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* kruh s iniciálami */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    flex-shrink: 0;
+}
+
+.home-intro h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.home-intro p {
+    color: #888888;
+    margin-bottom: 18px;
+}
+
+/* tagy s technologiami */
+.badge-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background-color: #1e1b4b;
+    color: #a5b4fc;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    border: 1px solid #6366f1;
+}
+
+/* tlacidla na domovskej strane */
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+}
+
+/* hlavne fialove tlacidlo */
+.btn-primary {
+    background-color: #6366f1;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #4f46e5;
+}
+
+/* tlacidlo len s okrajom */
+.btn-outline {
+    background-color: transparent;
+    color: #e5e5e5;
+    border: 1px solid #2a2a2a;
+}
+
+.btn-outline:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+/* mriezka kart prispevkov */
+.post-grid {
+    display: grid;
+    gap: 14px;
+}
+
+/* karta prispevku */
+.post-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 22px;
+    text-decoration: none;
+    color: #e5e5e5;
+    display: block;
+    cursor: pointer;
+}
+
+.post-card:hover {
+    border-color: #6366f1;
+}
+
+/* tag a datum vedla seba */
+.post-card .meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* fialovy tag napr Web dev */
+.tag {
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    background-color: #1e1b4b;
+    color: #a5b4fc;
+    border: 1px solid #6366f1;
+}
+
+.date {
+    font-size: 13px;
+    color: #888888;
+}
+
+.post-card h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: white;
+}
+
+.post-card p {
+    font-size: 14px;
+    color: #888888;
+}
+
+/* --- O MNE --- */
+
+/* tri boxy so statistikami */
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+
+.stat-box {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* velke cislo */
+.stat-box .num {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6366f1;
+}
+
+/* popis pod cislom */
+.stat-box .lbl {
+    font-size: 12px;
+    color: #888888;
+    margin-top: 4px;
+}
+
+/* skusenosti a zrucnosti vedla seba */
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.about-block {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+/* nadpis bloku */
+.block-title {
+    font-size: 13px;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+/* jeden zaznam na casovej osi */
+.timeline-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+/* fialova bodka */
+.tl-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #6366f1;
+    margin-top: 7px;
+    flex-shrink: 0;
+}
+
+.tl-content p {
+    font-size: 14px;
+}
+
+.tl-content small {
+    color: #888888;
+    font-size: 13px;
+}
+
+/* progress bar - jeden riadok */
+.skill-row {
+    margin-bottom: 14px;
+}
+
+/* nazov a percento vedla seba */
+.skill-top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.skill-top span:last-child {
+    color: #888888;
+}
+
+/* seda liska - pozadie baru */
+.skill-bar {
+    height: 5px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+}
+
+/* fialova liska - vyplnena cast */
+.skill-fill {
+    height: 100%;
+    border-radius: 10px;
+    background-color: #6366f1;
+}
+
+/* --- BLOG --- */
+
+/* hlavny velky prispevok */
+.blog-featured {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.blog-featured:hover {
+    border-color: #6366f1;
+}
+
+.blog-featured .tag {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.blog-featured h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.blog-featured p {
+    color: #888888;
+    font-size: 15px;
+}
+
+/* datum a cas citania */
+.blog-footer {
+    display: flex;
+    gap: 14px;
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 13px;
+    color: #888888;
+}
+
+/* mensie prispevky v mriezke */
+.blog-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.blog-mini {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.blog-mini:hover {
+    border-color: #6366f1;
+}
+
+/* maly text nad nazvom */
+.blog-mini .tag2 {
+    font-size: 12px;
+    color: #888888;
+    margin-bottom: 6px;
+}
+
+.blog-mini h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+.blog-mini p {
+    font-size: 13px;
+    color: #888888;
+}
+
+/* --- GALERIA --- */
+
+/* tlacidla na filtrovanie */
+.gallery-filter {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.gf-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #888888;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.gf-btn:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.gf-btn.active {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+/* mriezka obrazkov - 3 stlpce */
+.gal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+/* jeden obrazok */
+.gal-item {
+    aspect-ratio: 1;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    display: block;
+}
+
+/* popis obrazka - ukaze sa po nabehuti mysou */
+.overlay-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 13px;
+    padding: 6px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.2s;
+}
+
+.gal-item:hover .overlay-label {
+    transform: translateY(0);
+}
+
+/* --- KONTAKTNY FORMULAR --- */
+
+.form-wrap {
+    max-width: 540px;
+}
+
+.form-row {
+    margin-bottom: 18px;
+}
+
+/* label nad polom */
+.form-row label {
+    display: block;
+    font-size: 14px;
+    color: #888888;
+    margin-bottom: 5px;
+}
+
+/* spolocne styly pre vsetky polia */
+.form-row input,
+.form-row textarea,
+.form-row select {
+    width: 100%;
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #e5e5e5;
+    padding: 10px 12px;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* zvyraznenie pri kliknuti na pole */
+.form-row input:focus,
+.form-row textarea:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.form-row textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* cerveny okraj pri chybe */
+.form-row.err input,
+.form-row.err textarea,
+.form-row.err select {
+    border-color: #ef4444;
+}
+
+/* chybova hlaska - normalne skryta */
+.err-txt {
+    font-size: 12px;
+    color: #ef4444;
+    margin-top: 4px;
+    display: none;
+}
+
+/* zobraz chybovu hlasku */
+.form-row.err .err-txt {
+    display: block;
+}
+
+/* radio a checkbox tlacidla */
+.radio-row,
+.check-row {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.radio-row label,
+.check-row label {
+    font-size: 15px;
+    color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* tlacidlo odoslat */
+.submit-btn {
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    padding: 11px 28px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.submit-btn:hover {
+    background-color: #4f46e5;
+}
+
+/* zelene oznamenie ze sprava bola odoslana */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #10b981;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    display: none;
+}
+
+/* --- TABULKA PROJEKTOV --- */
+
+/* taby na filtrovanie */
+.data-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.dtab {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    color: #888888;
+    padding: 7px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dtab:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+.dtab.active {
+    border-color: #6366f1;
+    color: #6366f1;
+}
+
+/* tabulka projektov */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+}
+
+/* hlavicka tabulky */
+.data-table th {
+    background-color: #111111;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 12px;
+    color: #888888;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* bunky tabulky */
+.data-table td {
+    padding: 12px 14px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 14px;
+}
+
+/* zvyraznenie riadku po nabehuti */
+.data-table tr:hover td {
+    background-color: #222222;
+}
+
+/* farebne pilulky pre kategorie */
+.pill {
+    display: inline-block;
+    font-size: 12px;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.pill.web    { background-color: #1e1b4b; color: #a5b4fc; }
+.pill.mobile { background-color: #042c53; color: #93c5fd; }
+.pill.design { background-color: #2d1d10; color: #fbbf24; }
+
+/* hviezdicke hodnotenie */
+.stars {
+    color: #6366f1;
+    font-size: 14px;
+}
+
+/* nacitavaci text pred zobrazenim tabulky */
+.load-bar {
+    text-align: center;
+    padding: 30px;
+    color: #888888;
+    font-size: 14px;
+}

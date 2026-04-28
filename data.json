@@ -1,0 +1,88 @@
+{
+  "projekty": [
+    {
+      "id": 1,
+      "name": "Lorem ipsum projekt",
+      "autor": {
+        "meno": "Lorem",
+        "priezvisko": "Ipsum",
+        "kontakt": {
+          "email": "lorem@email.com"
+        }
+      },
+      "rok": 2025,
+      "kat": "web",
+      "hodnotenie": 5
+    },
+    {
+      "id": 2,
+      "name": "Dolor sit amet app",
+      "autor": {
+        "meno": "Dolor",
+        "priezvisko": "Sit",
+        "kontakt": {
+          "email": "dolor@email.com"
+        }
+      },
+      "rok": 2025,
+      "kat": "mobile",
+      "hodnotenie": 4
+    },
+    {
+      "id": 3,
+      "name": "Consectetur dizajn",
+      "autor": {
+        "meno": "Conse",
+        "priezvisko": "Ctet",
+        "kontakt": {
+          "email": "con@email.com"
+        }
+      },
+      "rok": 2024,
+      "kat": "design",
+      "hodnotenie": 5
+    },
+    {
+      "id": 4,
+      "name": "Adipiscing web stranka",
+      "autor": {
+        "meno": "Adip",
+        "priezvisko": "Cing",
+        "kontakt": {
+          "email": "adip@email.com"
+        }
+      },
+      "rok": 2025,
+      "kat": "web",
+      "hodnotenie": 3
+    },
+    {
+      "id": 5,
+      "name": "Sed do eiusmod mobile",
+      "autor": {
+        "meno": "Sed",
+        "priezvisko": "Do",
+        "kontakt": {
+          "email": "sed@email.com"
+        }
+      },
+      "rok": 2024,
+      "kat": "mobile",
+      "hodnotenie": 4
+    },
+    {
+      "id": 6,
+      "name": "Tempor incididunt logo",
+      "autor": {
+        "meno": "Temp",
+        "priezvisko": "Or",
+        "kontakt": {
+          "email": "temp@email.com"
+        }
+      },
+      "rok": 2026,
+      "kat": "design",
+      "hodnotenie": 5
+    }
+  ]
+}

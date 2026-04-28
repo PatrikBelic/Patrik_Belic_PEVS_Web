@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty</title>
+    <!-- pripojenie stylov -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navigacna lista -->
+<nav>
+    <div class="nav-logo">moje<span>.</span>portfolio</div>
+    <div class="nav-links">
+        <a href="main.html">Domov</a>
+        <a href="about.html">O mne</a>
+        <a href="blog.html">Blog</a>
+        <a href="gallery.html">Galeria</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="data.html" class="active">Projekty</a>
+    </div>
+</nav>
+
+<!-- obsah stranky -->
+<div class="page">
+    <p class="section-label">Projekty</p>
+    <h1 class="page-h1">Zoznam projektov</h1>
+    <!-- vysvetlenie ze data su nacitane cez AJAX -->
+    <p class="page-sub">Data su nacitane zo suboru data.json pomocou AJAX</p>
+
+    <!-- taby na filtrovanie podla kategorie -->
+    <div class="data-tabs">
+        <button class="dtab active" onclick="loadTable('all', this)">Vsetky</button>
+        <button class="dtab" onclick="loadTable('web', this)">Web</button>
+        <button class="dtab" onclick="loadTable('mobile', this)">Mobile</button>
+        <button class="dtab" onclick="loadTable('design', this)">Design</button>
+    </div>
+
+    <!-- sem sa vlozi tabulka cez JavaScript -->
+    <div id="dataWrap"></div>
+</div>
+
+<script src="script.js"></script>
+<!-- nacitaj tabulku hned po otvoreni stranky -->
+<script>
+    loadTable('all', document.querySelector('.dtab'));
+</script>
+</body>
+</html>
