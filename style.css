@@ -35,7 +35,7 @@ nav {
 
 /* fialova bodka v logu */
 .nav-logo span {
-    color: #6366f1;
+    color: #f80a0a;
 }
 
 /* linky v navigacii */
@@ -60,7 +60,7 @@ nav {
     background-color: #222222;
 }
 
-/* obal obsahu - centruje a pridava okraje */
+/* page - centruje a pridava okraje */
 .page {
     max-width: 900px;
     margin-left: auto;
@@ -102,7 +102,6 @@ nav {
 }
 
 /* --- DOMOVSKA STRANKA --- */
-
 /* avatar a text su vedla seba */
 .home-header {
     padding-top: 60px;
@@ -116,7 +115,7 @@ nav {
 .avatar {
     width: 110px;
     height: 110px;
-    border-radius: 50%;
+    border-radius: 20%;
     background-color: #6366f1;
     display: flex;
     align-items: center;
@@ -252,7 +251,6 @@ nav {
 }
 
 /* --- O MNE --- */
-
 /* tri boxy so statistikami */
 .stat-grid {
     display: grid;
@@ -315,12 +313,12 @@ nav {
     align-items: flex-start;
 }
 
-/* fialova bodka */
+/* cervena bodka */
 .tl-dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #6366f1;
+    background-color: #e62828;
     margin-top: 7px;
     flex-shrink: 0;
 }
@@ -366,7 +364,6 @@ nav {
 }
 
 /* --- BLOG --- */
-
 /* hlavny velky prispevok */
 .blog-featured {
     background-color: #1a1a1a;
@@ -444,23 +441,22 @@ nav {
 }
 
 /* --- GALERIA --- */
-
-/* tlacidla na filtrovanie */
-.gallery-filter {
+/* filter tlacidla */
+.gf-btns {
     display: flex;
     gap: 8px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    margin-bottom: 16px;
 }
 
 .gf-btn {
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
     color: #888888;
-    padding: 6px 14px;
-    border-radius: 20px;
+    padding: 7px 16px;
+    border-radius: 7px;
     font-size: 14px;
     cursor: pointer;
+    font-family: Arial, sans-serif;
 }
 
 .gf-btn:hover {
@@ -491,6 +487,14 @@ nav {
     display: block;
 }
 
+/* obrazok vyplni celu bunku */
+.gal-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* popis obrazka - ukaze sa po nabehuti mysou */
 .overlay-label {
     position: absolute;
@@ -511,7 +515,6 @@ nav {
 }
 
 /* --- KONTAKTNY FORMULAR --- */
-
 .form-wrap {
     max-width: 540px;
 }
@@ -562,7 +565,7 @@ nav {
     border-color: #ef4444;
 }
 
-/* chybova hlaska - normalne skryta */
+/* chybova hlaska -> normalne skryta */
 .err-txt {
     font-size: 12px;
     color: #ef4444;
@@ -610,7 +613,7 @@ nav {
     background-color: #4f46e5;
 }
 
-/* zelene oznamenie ze sprava bola odoslana */
+/* oznamenie ze sprava bola odoslana */
 .toast {
     position: fixed;
     bottom: 20px;
@@ -624,15 +627,6 @@ nav {
 }
 
 /* --- TABULKA PROJEKTOV --- */
-
-/* taby na filtrovanie */
-.data-tabs {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-
 .dtab {
     background-color: #1a1a1a;
     border: 1px solid #2a2a2a;
@@ -686,7 +680,7 @@ nav {
     background-color: #222222;
 }
 
-/* farebne pilulky pre kategorie */
+/* farebne kolonky pre kategorie */
 .pill {
     display: inline-block;
     font-size: 12px;
@@ -711,4 +705,11 @@ nav {
     padding: 30px;
     color: #888888;
     font-size: 14px;
+}
+
+/* taby na filtrovanie */
+.data-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
 }
