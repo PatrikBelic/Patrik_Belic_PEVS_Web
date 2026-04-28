@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-A personal portfolio website created as a school project for the AAIKT course.
+A personal portfolio website created as a school project for the WEB design course.
 
 ## Pages
 - **main.html** - Home page
