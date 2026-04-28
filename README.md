@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-A personal portfolio website created as a school project for the AAIKT course.
+A personal portfolio website created as a school project for the WEB design course.
 
 ## Pages
 - **main.html** - Home page
@@ -11,7 +11,7 @@ A personal portfolio website created as a school project for the AAIKT course.
 - **data.html** - Project table loaded from JSON via AJAX
 
 ## How to run
-Open any HTML file using a local web server (e.g. WebStorm browser icon).
+Open any HTML file using a local web server.
 > Note: `file://` will break AJAX on data.html.
 
 ## Technologies
