@@ -6,7 +6,7 @@ A personal portfolio website created as a school project for the WEB design cour
 - **main.html** - Home page
 - **about.html** - About me with skills and timeline
 - **blog.html** - Blog with posts
-- **gallery.html** - Image gallery with category filter (GLightbox)
+- **gallery.html** - Image gallery with category filter
 - **contact.html** - Contact form with validation
 - **data.html** - Project table loaded from JSON via AJAX
 
