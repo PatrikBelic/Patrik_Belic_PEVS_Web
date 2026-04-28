@@ -15,7 +15,7 @@ Open any HTML file using a local web server.
 > Note: `file://` will break AJAX on data.html.
 
 ## Technologies
-HTML5 · CSS3 · JavaScript · AJAX (fetch API) · GLightbox (CDN)
+HTML5 · CSS3 · JavaScript · AJAX 
 
 > This README was updated to fix incorrect commit history from the first attempt visible on GitHub.
 
